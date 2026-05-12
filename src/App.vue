@@ -54,17 +54,9 @@
 	const statisticsSdg6 = ref([
 		{ value: '25 Juta', desc: 'Masyarakat Indonesia tidak menggunakan toilet.', source: '(UNICEF Indonesia, 2019)' },
 		{ value: '89%', desc: 'Sumber air dilaporkan tercemar bakteri feses.', source: '(TheBorgenProject, 2024)' },
-		{ value: '1.600', desc: 'Desa melaporkan kelangkaan air bersih.', source: '(UNESA, 2025)' },
+		{ value: '<8%', desc: 'Rumah tangga di Indonesia yang menyedot lumpur tinja secara berkala.', source: '(UNICEF Indonesia, 2022)' },
 		{ value: '2%', desc: 'Penduduk perkotaan memiliki akses saluran pembuangan air limbah (sewerage).', source: '(World Bank, 2020)' },
-		{ value: '21 dari 1.000', desc: 'Anak di bawah 5 tahun meninggal akibat kualitas air yang buruk.', source: '(TheBorgenProject, 2024)' }
-	])
-
-	const statisticsSdg3 = ref([
-		{ value: '9 Juta', desc: 'Kematian dini di seluruh dunia setiap tahunnya diakibatkan oleh polusi udara, air, dan tanah beracun.', source: '(The Lancet Commission on Pollution and Health, 2022)' },
-		{ value: '2 Juta', desc: 'Nyawa melayang secara global setiap tahunnya akibat paparan langsung bahan kimia berbahaya.', source: '(World Health Organization, 2021)' },
-		{ value: '70%', desc: 'Sumber air minum rumah tangga di Indonesia dilaporkan telah terkontaminasi oleh limbah bakteri feses dan polutan.', source: '(UNICEF & Kemenkes RI, 2022)' },
-		{ value: '99%', desc: 'Populasi global saat ini menghirup udara yang melebihi batas aman kualitas udara WHO, penuh dengan polutan penyebab penyakit pernapasan.', source: '(World Health Organization, 2022)' },
-		{ value: '1,4 Juta', desc: 'Kasus kematian tahunan yang secara langsung disebabkan oleh konsumsi air yang tercemar dan sanitasi lingkungan yang buruk.', source: '(World Health Organization, 2023)' }
+		{ value: '50%', desc: 'Penduduk Indonesia usia di atas 10 tahun belum mencuci tangan dengan sabun pada waktu-waktu kritis.', source: '(UNICEF Indonesia - WASH Acts, 2022)' }
 	])
 
 	const changePage = async (pageName) => {
@@ -74,7 +66,7 @@
 		setTimeout(() => { AOS.refreshHard(); }, 100);
 	}
 
-	onMounted(() => { AOS.init({ duration: 1500 }); })
+	onMounted(() => { AOS.init({ duration: 1500, once: true}); })
 </script>
 
 <style scoped>
