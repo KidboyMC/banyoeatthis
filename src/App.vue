@@ -52,12 +52,32 @@
 	const navLinks = [{ name: 'Home' }, { name: 'Design Process' }, { name: 'SWOT Analysis' }, { name: 'Trello Board' }]
 
 	const statisticsSdg6 = ref([
-		{ value: '25 Juta', desc: 'Masyarakat Indonesia tidak menggunakan toilet.', source: '(UNICEF Indonesia, 2019)' },
-		{ value: '89%', desc: 'Sumber air dilaporkan tercemar bakteri feses.', source: '(TheBorgenProject, 2024)' },
-		{ value: '<8%', desc: 'Rumah tangga di Indonesia yang menyedot lumpur tinja secara berkala.', source: '(UNICEF Indonesia, 2022)' },
-		{ value: '2%', desc: 'Penduduk perkotaan memiliki akses saluran pembuangan air limbah (sewerage).', source: '(World Bank, 2020)' },
-		{ value: '50%', desc: 'Penduduk Indonesia usia di atas 10 tahun belum mencuci tangan dengan sabun pada waktu-waktu kritis.', source: '(UNICEF Indonesia - WASH Acts, 2022)' }
-	])
+	{ 
+		value: '10,21%', 
+		desc: 'Akses layanan sanitasi benar-benar aman (tangki septik kedap air & sedot rutin) di Indonesia pada tahun 2022.', 
+		source: '(BPS, 2023)' 
+	},
+	{ 
+		value: 'E. coli', 
+		desc: 'Tingginya kontaminasi bakteri pada air tanah dangkal dan sungai akibat masih digunakannya tangki septik resapan.', 
+		source: '(Kementerian Kesehatan RI, 2020)' 
+	},
+	{ 
+		value: 'Fecal-Oral', 
+		desc: 'Sanitasi buruk memicu diare yang masih menjadi penyebab utama kesakitan dan kematian balita.', 
+		source: '(Kementerian Kesehatan RI, 2022)' 
+	},
+	{ 
+		value: 'Stunting', 
+		desc: 'Infeksi usus berulang akibat sanitasi tidak memadai memiliki korelasi kuat dengan tingginya stunting.', 
+		source: '(Kementerian Kesehatan RI, 2022)' 
+	},
+	{ 
+		value: 'Ekonomi', 
+		desc: 'Kerugian negara akibat tingginya beban biaya perawatan kesehatan dan hilangnya hari produktif masyarakat.', 
+		source: '(UNICEF Indonesia, 2022)' 
+	}
+])
 
 	const changePage = async (pageName) => {
 		currentPage.value = pageName;
