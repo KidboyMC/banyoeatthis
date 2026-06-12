@@ -182,7 +182,7 @@
           >
             {{ stat.value }}
           </div>
-          <p class="text-xs text-gray-700 mb-4 h-8 md:h-40 lg:h-24 leading-relaxed">
+          <p class="text-xs text-gray-700 mb-4 md:h-40 lg:h-24 leading-relaxed">
             {{ stat.desc }}
           </p>
           <p class="text-[11px] text-gray-500 font-medium">{{ stat.source }}</p>
